@@ -105,8 +105,8 @@ public class PlotWindow
    
    private void transformMatrix()
    {
-     translate(windowWidth/2, windowHeight/2);
      scale(windowWidth/(xMax-xMin), -1*windowHeight/(yMax-yMin));
+     translate(-xMin, -yMax);
    } 
    
    public void plotPoint(float x, float y)
